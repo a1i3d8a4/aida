@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: myIranYekan , "B Yekan" , sans-serif;
+}
+@font-face {
+    font-family: "myIranYekan";
+    src: url("../fonts/iranyekan/ttf/iranyekanwebregular.ttf") format("truetype"),
+    url("../fonts/iranyekan/woff2/iranyekanwebregular.woff2") format("woff2") ,
+    url("../fonts/iranyekan/woff/iranyekanwebregular.woff") format("woff") ;
+}
+@font-face {
+    font-family: "myIranYekan";
+    font-weight: bold;
+    src: url("../fonts/iranyekan/ttf/iranyekanwebbold.ttf") format("truetype"), url("../fonts/iranyekan/woff2/iranyekanwebbold.woff2") format("woff2") , url("../fonts/iranyekan/woff/iranyekanwebbold.woff") format("woff") ;
+}
+@font-face {
+    font-family: "myPinar";
+    font-weight: bold;
+    src: url('../fonts/pinar/pinar-700.woff2') format("woff2");
+}
+:root{
+    --maincolor:#72398e;
+    --hovercolor:#cb79e1;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+}
+#processor{
+    margin: 0;
+    padding: 0;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    /*border: 1px solid blue;*/
+    background-color: whitesmoke;
+    min-height: 800px;
+    width: 100%;
+    /*display: none;*/
+}
+.container{
+    /*border: 1px solid blue;*/
+    min-height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 2;
+    padding-top: 20px;
+}
+a#logo-wrapper:link,
+a#logo-wrapper:visited{
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid red;*/
+    min-height: 15px;
+    font-size: 15px;
+
+}
+a#logo-wrapper>img{
+    height: 90px;
+}
+i.fa-times{
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+   float: left;
+}
+.fa-times:hover{
+    color: var(--hovercolor);
+}
+#col-wrapper{
+    min-height: 200px ;
+    /*border: 1px solid blue;*/
+    display: flex;
+    align-items: center;
+}
+#right-col,#left-col{
+    /*border: 1px solid green;*/
+    min-height: 300px;
+    flex-basis: 50%;
+    margin-top: 100px;
+    column-gap: 0;
+
+}
+.menu{
+    display: flex;
+    position: relative;
+    /*column-gap: 20px;*/
+    /*border: 1px solid black;*/
+    min-height: 50px;
+    background-color: lightgray;
+    width:90%;
+    justify-content: center;
+    margin: 5px auto;
+    transition: all 0.5s;
+    /*font-family: myPinar,sans-serif;*/
+}
+.menu h3{
+    font-family:myIranYekan,sans-serif;
+    color: #413e3e;
+    position: absolute;
+    right: 10%;
+    text-align:right;
+    transition: all 0.5s;
+}
+.menu i{
+    color: #413e3e;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    transition: all 0.5s;
+}
+.menu:hover{
+    background-color: var(--hovercolor);
+}
+.menu:hover i,
+.menu:hover h3{
+    color: white;
+}
+.menu:hover i{
+    padding-right: 2%;
+
+}

@@ -1,0 +1,353 @@
+/*@media screen and (max-width: 3000px){*/
+/*    .section-title::before{*/
+/*        right: 49%;*/
+/*    }*/
+/*}*/
+@media screen and (max-width: 1200px){
+    @keyframes zoomOut {
+        from{
+            background-size: 200%;
+        }
+        to{
+            background-size: 210%;
+        }
+    }
+    .analog-clock{
+        bottom: 0;
+        right: 0;
+    }
+    #faq-columns{
+        flex-direction: column-reverse;
+    }
+    .menu h3{
+        right: 15%;
+    }
+    #top-navigation{
+        width: 400px;
+    }
+    #top-navigation ul{
+        margin: 0;
+        column-gap: 10px;
+    }
+    #show-hide-menu:link,
+    #show-hide-menu:visited{
+        right: 100%;
+    }
+    .section-title::before{
+        right: 47.5%;
+    }
+    #reg-form{
+        left: 0;
+    }
+    .services .details a{
+        bottom: 0;
+        right: 20%;
+    }
+    .customer{
+        width: 30%;
+        min-height: 30%;
+    }
+    .customer-name{
+        right: 30%;
+    }
+    .comments img[src$="svg"]{
+        width: 30%;
+    }
+        /*#cols{*/
+    /*    margin:0 10%;*/
+    /*}*/
+    .labels ul{
+
+    }
+    .labels ul a:link,
+    .labels ul a:visited{
+        font-weight: normal;
+    }
+
+
+}
+@media screen and (max-width: 992px) {
+    .analog-clock{
+        display: none
+    }
+    a.logo-wrapper>img{
+        height: 70px;
+        padding-left:70px ;
+    }
+    #top-navigation ul{
+        column-gap: 7px;
+    }
+    .section-title::before{
+        right: 47%;
+    }
+    #services-wrapper{
+        row-gap: 20px;
+        flex-wrap:wrap ;
+    }
+    .services{
+        flex-grow: initial;
+        flex-basis: 48%;
+    }
+    .services .details a{
+        bottom: 0;
+        right: 30%;
+    }
+
+    .comments{
+        background-size: 50px;
+        min-height: 1000px;
+    }
+    .customer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .customer{
+        width: 40%;
+        min-height: 40%;
+    }
+    .customer-name{
+        position: absolute;
+        top: 25%;
+        right:36%;
+        margin-bottom:500px;
+    }
+    .comment p{
+        margin-top: 100px;
+    }
+    #filters{
+        width: 80%;
+    }
+    #portfolio-wrapper{
+        grid-template-columns: repeat(2, auto)
+    }
+    .work-sample h3{
+        top: 5%;
+        right: 70%;
+    }
+    #team-wrapper{
+        row-gap: 20px;
+        flex-wrap:wrap ;
+    }
+    .team{
+        flex-grow: initial;
+        flex-basis: 48%;
+    }
+    #columns-wrapper{
+        flex-wrap: wrap;
+    }
+    .column{
+        flex-grow: initial;
+        flex-basis: 48%;
+    }
+    #cols p{
+        line-height: 2;
+    }
+    #cols{
+        margin:0 20%;
+    }
+}
+@media screen and (max-width: 768px){
+    #home{
+        min-height: 600px;
+    }
+    #top-navigation ul{
+        display: none;
+    }
+    #search{
+        width: 97%;
+    }
+    .section-title::before{
+        right: 46%;
+    }
+    .services{
+        flex-basis: 100%;
+        min-height: 300px;
+    }
+    .services .details a{
+        right: 40%;
+    }
+    .statistics{
+        flex-wrap: wrap;
+    }
+    .statistics-wrapper{
+        flex-grow: initial;
+        flex-basis: 48%;
+        min-height: 0;
+    }
+    .acc-title{
+        width: 100%;
+    }
+    .comment{
+        min-height: 600px;
+    }
+    .customer{
+        width: 50%;
+        min-height: 50%;
+    }
+    .customer-name{
+        position: absolute;
+        top: 15%;
+        right:25%;
+    }
+    .comment p{
+        margin-top: 35%;
+    }
+    .comment img[src$="svg"]{
+        width: 35%;
+    }
+    .contact{
+        color: white;
+    }
+    #cols{
+        margin:0 10%;
+    }
+
+}
+@media screen and (max-width: 576px){
+    .menu h3{
+        right: 18%;
+    }
+    /*#faq{*/
+    /*    min-height: 100%;*/
+    /*    margin-bottom: 300px;*/
+    /*}*/
+    /*#accordion{*/
+    /*    margin-top: 100px;*/
+    /*}*/
+    /*#faq-columns{*/
+    /*    flex-direction: column-reverse;*/
+    /*}*/
+    #home{
+        background-size: 150%;
+        background-repeat: no-repeat;
+        height: 500%;
+        background-position: top;
+    }
+    a.logo-wrapper>img{
+        height:50px;
+        position: absolute;
+        top: 3%;
+        right: 0;
+    }
+    #main-description h2{
+        padding: 0;
+        /*font-size:15px;*/
+        margin: 0;
+    }
+    #main-description h1{
+        /*font-size: 20px;*/
+    }
+    #main-description h4{
+        /*font-size: 10px;*/
+    }
+    #search{
+        /*margin: 0;*/
+    }
+
+    .section-title::before{
+        right: 44%;
+    }
+    #main-description{
+        line-height: 1.5;
+    }
+    .statistics-wrapper{
+        flex-basis: 100%;
+    }
+    #comments-wrapper{
+        row-gap: 20px;
+        flex-wrap:wrap ;
+    }
+    .comment{
+        flex-basis: 100%;
+        min-height: 450px;
+    }
+    .comment h2{
+        margin: 0;
+    }
+    .comment p{
+        margin-top: 25%;
+    }
+    .customer-name{
+        position: absolute;
+        top: 35%;
+        right:35%;
+        margin: 0;
+    }
+
+    #filters{
+        width: 90%;
+        display: block;
+    }
+    #filters li{
+        margin: 10px;
+        border-radius: 20px;
+    }
+    #filters a:link,
+    #filters a:visited{
+        border-radius: 20px;
+    }
+    #portfolio-wrapper{
+        grid-template-columns: repeat(1, auto)
+    }
+    .team{
+        flex-basis: 100%;
+    }
+    #contact{
+        row-gap: 20px;
+        flex-wrap:wrap ;
+        margin: 0;
+        padding:0 ;
+        align-items: initial;
+    }
+    .contact{
+        flex-grow: initial;
+        flex-basis: 100%;
+        margin: 0;
+        padding:0 ;
+        color: white;
+    }
+    .contact i{
+        margin:0;
+        padding:0 ;
+    }
+    #form-control{
+        flex-direction: column;
+    }
+    .column{
+        flex-grow: initial;
+        flex-basis: 100%;
+
+    }
+    #left ,#right{
+        width: 100%;
+    }
+    #cols p{
+        line-height: 2;
+        font-size: 10px;
+    }
+    #cols{
+        margin:0 15%;
+    }
+    .logo-wrapper{
+        margin: 0 100px;
+    }
+    .image{
+        margin: 0 100px;
+    }
+    i.fa-times{
+        font-size: 40px;
+    }
+    i.fa-bars{
+        font-size: 30px;
+    }
+    .slick-prev, .slick-next {
+        background-color: var(--maincolor);
+        color: white;
+        z-index: 100;
+        width: 40px;
+        height: 40px;
+        margin:  0;
+    }
+}
